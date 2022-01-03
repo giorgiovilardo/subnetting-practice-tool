@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{63F19336
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubnetPracticeTool.Core.Tests", "tests\SubnetPracticeTool.Core.Tests\SubnetPracticeTool.Core.Tests.csproj", "{14E59D95-3C65-4AE6-B073-832B99247633}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubnetPracticeTool.API", "src\SubnetPracticeTool.API\SubnetPracticeTool.API.csproj", "{BE30BD76-4800-4053-9FD9-E15AFA364A08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubnetPracticeTool.API.Tests", "tests\SubnetPracticeTool.API.Tests\SubnetPracticeTool.API.Tests.csproj", "{DEF1CB2B-9D5F-4B8B-9D21-0D95C6C79E8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,13 +28,23 @@ Global
 		{4181A92E-60D8-4621-9627-94D11C499D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4181A92E-60D8-4621-9627-94D11C499D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4181A92E-60D8-4621-9627-94D11C499D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4181A92E-60D8-4621-9627-94D11C499D8F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{14E59D95-3C65-4AE6-B073-832B99247633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14E59D95-3C65-4AE6-B073-832B99247633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14E59D95-3C65-4AE6-B073-832B99247633}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14E59D95-3C65-4AE6-B073-832B99247633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE30BD76-4800-4053-9FD9-E15AFA364A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE30BD76-4800-4053-9FD9-E15AFA364A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE30BD76-4800-4053-9FD9-E15AFA364A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE30BD76-4800-4053-9FD9-E15AFA364A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE30BD76-4800-4053-9FD9-E15AFA364A08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DEF1CB2B-9D5F-4B8B-9D21-0D95C6C79E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF1CB2B-9D5F-4B8B-9D21-0D95C6C79E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF1CB2B-9D5F-4B8B-9D21-0D95C6C79E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4181A92E-60D8-4621-9627-94D11C499D8F} = {658C7436-8FFB-49C0-A9D4-402F6FE754E6}
 		{14E59D95-3C65-4AE6-B073-832B99247633} = {63F19336-5A4E-43E9-8827-AF4738A5C65F}
+		{BE30BD76-4800-4053-9FD9-E15AFA364A08} = {658C7436-8FFB-49C0-A9D4-402F6FE754E6}
+		{DEF1CB2B-9D5F-4B8B-9D21-0D95C6C79E8A} = {63F19336-5A4E-43E9-8827-AF4738A5C65F}
 	EndGlobalSection
 EndGlobal

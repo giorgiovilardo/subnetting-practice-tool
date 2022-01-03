@@ -23,5 +23,6 @@ I can compare solutions.
 - [ ] Exercise solving
 - [ ] Exam mode (x exercises in y minutes)
 - [ ] API
+  - [x] `GetExercise`
 - [ ] Frontend
 - [ ] Console app
