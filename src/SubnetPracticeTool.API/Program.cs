@@ -1,7 +1,5 @@
 using System.Net;
 
-using Microsoft.AspNetCore.Mvc;
-
 using SubnetPracticeTool.API;
 using SubnetPracticeTool.Core;
 
