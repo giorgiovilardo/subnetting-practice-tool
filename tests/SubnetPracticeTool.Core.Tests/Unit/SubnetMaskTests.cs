@@ -25,7 +25,7 @@ public class SubnetMaskTests
     public void HasAStringRepresentationWithTheCidrNotation()
     {
         var sm = new SubnetMask(24);
-        Assert.Equal("24", sm.ToStringCidrNumber());
+        Assert.Equal("24", sm.ToCidrBitsString());
     }
 
     [Fact]
@@ -34,5 +34,21 @@ public class SubnetMaskTests
         var sm = new SubnetMask(24);
         var sm2 = new SubnetMask(24);
         Assert.Equal(sm, sm2);
+    }
+
+    [Fact]
+    public void CanReturnAddressBytesLikeAnIp()
+    {
+        var sm = new SubnetMask(24);
+        var expectedByteArray = new byte[] { 255, 255, 255, 0 };
+        Assert.Equal(expectedByteArray, sm.GetAddressBytes());
+    }
+
+    [Fact]
+    public void CanBeRepresentedAsAWildcard()
+    {
+        var sm = new SubnetMask(24);
+        var expectedByteArray = new byte[] { 0, 0, 0, 255 };
+        Assert.Equal(expectedByteArray, sm.GetWildcardAddressBytes());
     }
 }

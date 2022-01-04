@@ -29,8 +29,22 @@ public record SubnetMask
         return $"{Ip}";
     }
 
-    public string ToStringCidrNumber()
+    public string ToCidrBitsString()
     {
         return $"{Bits}";
+    }
+
+    public byte[] GetAddressBytes()
+    {
+        return Ip.GetAddressBytes();
+    }
+
+    /// <summary>
+    /// Remember! The wildcard mask is the inverse of the subnet mask.
+    /// </summary>
+    /// <returns>The byte array of the wildcard mask.</returns>
+    public byte[] GetWildcardAddressBytes()
+    {
+        return Ip.GetAddressBytes().Select(octet => octet ^ 255).Select(Convert.ToByte).ToArray();
     }
 };
