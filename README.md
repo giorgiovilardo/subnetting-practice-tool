@@ -20,7 +20,7 @@ I can compare solutions.
 ## Project roadmap
 
 - [x] Exercise generation
-- [ ] Exercise solving
+- [x] Exercise solving (basic)
 - [ ] Exam mode (x exercises in y minutes)
 - [ ] API
   - [x] `GetExercise`
