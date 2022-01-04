@@ -18,7 +18,7 @@ public class ExerciseSolver
     {
         return new IPAddress(GetNetworkAddressBytes());
     }
-    
+
     public IPAddress GetBroadcastAddress()
     {
         var sumNetworkOctetsAndWildcardMask = GetNetworkAddressBytes()

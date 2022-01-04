@@ -27,7 +27,7 @@ public class ExerciseSolverTests
         var solver = ExerciseSolver.FromString(ipAddress, subnetBits);
         Assert.NotNull(solver);
     }
-    
+
     [Theory]
     [InlineData(new byte[] { 192, 168, 0, 100 }, 24, new byte[] { 192, 168, 0, 255 })]
     [InlineData(new byte[] { 10, 0, 0, 129 }, 25, new byte[] { 10, 0, 0, 255 })]

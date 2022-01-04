@@ -25,7 +25,7 @@ public class GetExerciseTests : IClassFixture<WebApiFactory>
         var apiResponse = await _client.GetFromJsonAsync<GetExerciseResponse>("/exercise");
         Assert.Matches(@"\d{1,3}", apiResponse!.IpAddress);
     }
-    
+
     [Fact]
     public async void ShouldReturnACidrSubnetMask()
     {
