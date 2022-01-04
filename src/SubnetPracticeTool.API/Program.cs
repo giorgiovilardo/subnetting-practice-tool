@@ -28,7 +28,7 @@ app.UseResponseCompression();
 app.MapGet("/exercise", () =>
 {
     (IPAddress ipAddress, SubnetMask subnetMask) = new ExerciseFactory(new Random()).GetRandomExercise();
-    return new GetExerciseResponse(ipAddress.ToString(), subnetMask.ToStringCidrNumber());
+    return new GetExerciseResponse(ipAddress.ToString(), subnetMask.ToCidrBitsString());
 }).Produces<GetExerciseResponse>();
 
 app.Run();
