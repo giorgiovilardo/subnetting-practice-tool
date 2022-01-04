@@ -4,6 +4,8 @@ using System.Net.Http.Json;
 
 using Microsoft.AspNetCore.Mvc.Testing;
 
+using SubnetPracticeTool.API.GetExercise;
+
 using Xunit;
 
 namespace SubnetPracticeTool.API.Tests;

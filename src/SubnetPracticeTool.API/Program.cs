@@ -1,6 +1,6 @@
 using System.Net;
 
-using SubnetPracticeTool.API;
+using SubnetPracticeTool.API.GetExercise;
 using SubnetPracticeTool.Core;
 
 var builder = WebApplication.CreateBuilder(args);
