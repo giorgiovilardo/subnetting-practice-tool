@@ -46,4 +46,22 @@ public class ExerciseSolver
         var subnet = new SubnetMask(int.Parse(subnetBits));
         return new ExerciseSolver(ip, subnet);
     }
+
+    public bool IsValidSolution(string networkAddress, string broadcastAddress) =>
+        GetNetworkAddress().ToString() == networkAddress && GetBroadcastAddress().ToString() == broadcastAddress;
+
+    public IEnumerable<Dictionary<string, string>> GetSolutionErrors(string networkAddress, string broadcastAddress)
+    {
+        var result = new List<Dictionary<string, string>>();
+        if (networkAddress != GetNetworkAddress().ToString())
+        {
+            result.Add(new Dictionary<string, string> { { "field", "networkAddress" }, { "message", $"{networkAddress} is not the network address for {_ipAddress}/{_subnetMask.Bits}" } });
+        }
+        if (broadcastAddress != GetBroadcastAddress().ToString())
+        {
+            result.Add(new Dictionary<string, string> { { "field", "broadcastAddress" }, { "message", $"{broadcastAddress} is not the broadcast address for {_ipAddress}/{_subnetMask.Bits}" } });
+        }
+
+        return result;
+    }
 }
