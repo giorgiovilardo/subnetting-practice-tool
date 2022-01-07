@@ -24,5 +24,6 @@ I can compare solutions.
 - [ ] Exam mode (x exercises in y minutes)
 - [ ] API
   - [x] `GetExercise`
+  - [x] `SolveExercise`
 - [ ] Frontend
 - [ ] Console app
